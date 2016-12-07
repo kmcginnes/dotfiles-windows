@@ -23,19 +23,12 @@ cinst wput
 
 # browsers
 cinst GoogleChrome
-cinst GoogleChrome.Canary
-cinst Firefox
-cinst Opera
 
 # dev tools and frameworks
-cinst atom
 cinst GitHubForWindows
-cinst hg
 cinst Fiddler4
 cinst nodejs.install
-cinst ruby
 cinst vim
-cinst winmerge
 
 # other
 #cinst wincommandpaste # Copy/Paste is supported natively in Win10
@@ -75,7 +68,6 @@ if (which webpicmd) {
     webpicmd /Install /AcceptEula /Products:"IISManagementConsole"
     webpicmd /Install /AcceptEula /Products:"WebSockets"
     webpicmd /Install /AcceptEula /Products:"NetFx3,NetFx4,NETFramework452,NetFx4Extended-ASPNET45,NETExtensibility,NetFxExtensibility45,ASPNET,ASPNET45"
-    webpicmd /Install /AcceptEula /Products:"Python279"
 }
 
 
@@ -96,20 +88,13 @@ if (which npm) {
     npm install -g yo
 }
 
-
-### Janus for vim
-if ((which vim) -and (which rake)) {
-    curl.exe -L https://bit.ly/janus-bootstrap | bash
-}
-
-
 ### Visual Studio Plugins
 if (which Install-VSExtension) {
     ### Visual Studio 2015
-    # VsVim
-    Install-VSExtension https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329/file/6390/57/VsVim.vsix
-    # Productivity Power Tools 2015
-    Install-VSExtension https://visualstudiogallery.msdn.microsoft.com/34ebc6a2-2777-421d-8914-e29c1dfa7f5d/file/169971/1/ProPowerTools.vsix
+    # # VsVim
+    # Install-VSExtension https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329/file/6390/57/VsVim.vsix
+    # # Productivity Power Tools 2015
+    # Install-VSExtension https://visualstudiogallery.msdn.microsoft.com/34ebc6a2-2777-421d-8914-e29c1dfa7f5d/file/169971/1/ProPowerTools.vsix
 
     ### Visual Studio 2013
     # VsVim
