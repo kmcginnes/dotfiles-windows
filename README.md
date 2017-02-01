@@ -4,6 +4,21 @@ A collection of PowerShell files for Windows, including common application insta
 
 Are you a Mac user? Check out my [dotfiles](https://github.com/kmcginnes/dotfiles) repository.
 
+## Normal Windows setup
+
+* Install Visual Studio 2015 Enterprise Update 3
+* Install SQL Server Developer Edition
+* Install ConEmu
+  * Set default to PowerShell Admin pointed to `C:\code`
+* Install 7zip
+* Install SublimeText
+  * Set theme
+  * Add package manager
+    * Auto Indent
+    * Powershell
+* Install GitHub Desktop
+* Install Node & NPM
+
 ## Installation
 
 ### Using Git and the bootstrap script
